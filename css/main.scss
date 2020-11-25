@@ -1742,7 +1742,7 @@ body.is-loading {
             "background-image",
             (
                 "linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))",
-                'url("#{$baseurl}/banner.jpg")'
+                'url("#{$baseurl}/header.png")'
             )
         );
         background-attachment: fixed;
@@ -1873,7 +1873,7 @@ body.landing {
             "background-image",
             (
                 "linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))",
-                'url("#{$baseurl}/banner.jpg")'
+                'url("#{$baseurl}/header.png")'
             )
         );
         background-attachment: fixed;
@@ -1900,7 +1900,7 @@ body.is-mobile {
                 "background-image",
                 (
                     "linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))",
-                    'url("#{$baseurl}/banner.jpg")'
+                    'url("#{$baseurl}/header.png")'
                 )
             );
             background-position: center center;
