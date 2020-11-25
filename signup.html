@@ -1,0 +1,85 @@
+---
+layout: page
+title: Sign Up
+subheading: Enter your details below
+---
+
+<h3>Sign Up</h3>
+
+<p></p>
+
+<form action="https://formspree.io/bannergrinds@gmail.com" method="POST">
+    <input
+        type="text"
+        name="name"
+        placeholder="Students name"
+        style="margin-bottom: 20px"
+    />
+    <input
+        type="email"
+        name="_replyto"
+        placeholder="Your email address"
+        style="margin-bottom: 20px"
+    />
+    <input
+        type="text"
+        name="phone"
+        placeholder="Phone number"
+        style="margin-bottom: 20px"
+    />
+    <input
+        type="text"
+        name="location"
+        placeholder="Your location"
+        style="margin-bottom: 20px"
+    />
+    <div class="select-wrapper">
+        <select name="subject" id="demo-category2" style="margin-bottom: 20px">
+            <option disabled selected>- Select Subject -</option>
+            <option>Maths</option>
+            <option>English</option>
+            <option>DCG</option>
+            <option>History</option>
+            <option>Other</option>
+        </select>
+    </div>
+    <div class="select-wrapper">
+        <select name="course" id="demo-category" style="margin-bottom: 20px">
+            <option disabled selected>- Select Course -</option>
+            <option>Leaving Cert Ordinary Level</option>
+            <option>Leaving Cert Higher Level</option>
+            <option>Junior Cert Ordinary Level</option>
+            <option>Junior Cert Higher Level</option>
+            <option>Other</option>
+            <!-- <option>Junior Cert Higher Level Easter Class</option>
+            <option>Leaving Cert Ordinary Level Easter Class</option>
+            <option>Leaving Cert Higher Level Easter Class</option>
+            <option disabled>Junior Cert Higher Level - Full</option>
+            <option disabled>Junior Cert Ordinary Level - Full</option> -->
+        </select>
+    </div>
+    <!-- <input type="text" name="referral_email" class="referral" placeholder="Enter the email from a student in this class who referred you and you'll both receive a 10% discount" style="margin-bottom: 20px"> -->
+    <textarea
+        name="content"
+        placeholder="Your enquiry here"
+        style="margin-bottom: 20px"
+        rows="6"
+    ></textarea>
+    <input type="submit" value="Send" />
+    <input
+        type="hidden"
+        name="_next"
+        value="//www.bannergrinds.com/thanks.html"
+    />
+    <input type="text" name="_gotcha" style="display: none" />
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    if ($(window).width() < 960) {
+        $(".referral").attr("placeholder", "Referral email - 10% discount");
+    }
+
+    $("#datepicker").datepicker();
+</script>
